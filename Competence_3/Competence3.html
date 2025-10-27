@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+	<title>Compétence 3</title>
+	<meta charset="UTF-8">
+	<link rel = "stylesheet" type = "text/css" href = "Competence3.css">
+	
+  </head>
+  <body>
+  
+   <header>
+   <title>Administrer des systèmes informatiques communicants complexes</title>
+  </header>
+  
+  <h2>Cette compétence consiste à installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, 
+  des services et des réseaux et optimiser le système informatique d’une organisation. :</h2>
+  
+  <h2>Apprentissages critiques et composantes essentielles :</h2>
+  
+  <h1>- Utiliser les fonctionnalités de base d’un système multitâches / multiutilisateurs </h1>
+  
+  <div style="display: flex; align-items: flex-start;">
+  <div style="flex: 2; padding-right: 20px;">
+  
+  <h2>Dans cet exemple, tiré de la SAE 1.03, au cours de laquelle j'ai configué et installé une machine virtuelle Debian.
+  Une des étapes à consisté à créer un autre compte utilisateur à partir des lignes de commande, illustrant ainsi l’usage des 
+  fonctionnalités de base d’un système multitâches et multiutilisateurs.
+    </h2>
+  </div>
+  <div style="flex: 1;">
+    <img src="./Ressources/Creation de l'utilisateur invite.png" alt="Création d'un utilisateur" style="max-width: 100%;">
+  </div>
+</div>
+
+
+<h1>- Identifier les différents composants (matériels et logiciels) d’un système numérique</h1>
+  
+  <div style="display: flex; align-items: flex-start;">
+  <div style="flex: 2; padding-right: 20px;">
+  
+  <h2>L'activité 4 de la SAE 1.03 consistait à paramétrer l'USB sur la machine virtuelle. Pour cela, j'ai identifié le
+  périphérique de stockage sur l'hôte, le configurer dans VirtualBox pour qu'il soit reconnu par l'invité.
+  Puis, sur la VM, lister les périphériques via la commande "fisk -l" afin de repérer son nom, par exemple "sda0" ou "sda1".
+  Cela m’a permis de comprendre le lien entre les composants matériels (USB branché sur le port de l’ordinateur), 
+  leur désignation dans le système d’exploitation hôte, et leur gestion dans la machine virtuelle invitée.</h2>
+    </h2>
+	
+  <p><a href="./Ressources/Activite4.pdf">Lien vers l'activité 4</a></p>
+	
+  </div>
+</div>
+
+<h1>- Installer et configurer un système d'exploitation et des outils de développement</h1>
+  
+  <div style="display: flex; align-items: flex-start;">
+  <div style="flex: 2; padding-right: 20px;">
+  
+  <h2>La SAE 1.03 au cours de laquelle j'ai configuré une machine virtuelle Debian correspond à cet apprentissage critique.
+  De plus, j'ai également installé quelques applications et outils de développement ; tels que un éditeur de texte, un gestionnaire
+  de partitions, ou encore Java. Que nous verrons plus en détail avec la présentation de cette SAE.
+    </h2>
+	
+	<p><a href="./Ressources/Notice.pdf">Mode opératoire de la SAE</a></p>
+	
+  </div>
+  <div style="flex: 1;">
+    <img src="./Ressources/Accueil VM.png" alt="Accueil de la VM" style="max-width: 100%;">
+  </div>
+</div>
+
+<h1>- À l'aide de Docker, installer des services réseau de base et configurer un poste de travail dans un 
+réseau d’entreprise</h1>
+  
+  <div style="display: flex; align-items: flex-start;">
+  <div style="flex: 2; padding-right: 20px;">
+  
+  <h2>La SAE 2.03 au cours de laquelle j'ai crée un site de vidéo semblable à Youtube avec HTML, Javascript, PHP avec la possibilité de visionner,
+  publier et mettre des "j'aime" sur des vidéos. Le site à été hébergé par un conteneur Docker. Cette SAE illustre 
+  l’installation d’un service réseau à l’aide de Docker, dans un environnement comparable à un réseau d’entreprise.
+    </h2>
+  </div>
+  <div style="flex: 1;">
+    <img src="./Ressources/Capture_site.png" alt="Capture d'écran du site" style="max-width: 100%;">
+  </div>
+</div>
+
+<h1>- Connaissances de base sur l'architecture des systèmes et des réseaux</h1>
+  
+  <div style="display: flex; align-items: flex-start;">
+  <div style="flex: 2; padding-right: 20px;">
+  
+  <h2>Lors de la SAE 1.03, j’ai configuré l’accès SSH entre ma machine virtuelle Debian et l’hôte Windows via une redirection de port, 
+  en adaptant les paramètres réseau de VirtualBox (mode NAT). Cette mise en place m’a permis de mieux comprendre le fonctionnement 
+  des services réseau ainsi que l’utilisation d’un protocole sécurisé comme SSH pour l’administration distante.
+    </h2>
+	
+	<p><a href="./Ressources/Activite5.pdf">Le mode opératoire de cette activité</a></p>
+	
+  </div>
+  <div style="flex: 1;">
+    <video width="450" height="250" controls>
+  <source src="./Ressources/Video_SSH.mp4" type="video/mp4">
+  Votre navigateur ne supporte pas la balise vidéo.
+</video>
+  </div>
+</div>
+
+<h1>- Au niveau de la programmation Shell, mettre en place des mesures correctives adaptées à la nature 
+des incidents identifiés</h1>
+  
+  <div style="display: flex; align-items: flex-start;">
+  <div style="flex: 2; padding-right: 20px;">
+  
+  <h2>Dans ce TD sur la programmation Shell, j'ai écrit un script qui prend en paramètre un fichier et renvoie un code correspondant à
+  son type et ses caractéristiques en cas d'éventuel incident. Ce système permet de mettre en place des mesures correctives afin de
+  diagnostiquer et réagir face à des incidents comme entre autres des fichiers inexistants ou non exécutables.</h2>
+    </h2>
+	
+	<p><a href="./Ressources/Exercice4.sh">Le script shell</a></p>
+	<p><a href="./Ressources/Résultat du script.png">Le résultat du script</a></p>
+	
+  </div>
+</div>

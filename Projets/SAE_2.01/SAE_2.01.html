@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+	<title>SAE 2.01</title>
+	<meta charset="UTF-8">
+	<link rel = "stylesheet" type = "text/css" href = "SAE_2.01.css">
+	
+  </head>
+  <body>
+  
+<title>SAE 2.01</title>
+
+
+<h2>Réaliser un développement d'application</h2>
+
+<p>
+L’objectif de cette SAE était de développer une application Java de gestion de graphe MPM (Méthode des Potentiels Métra) afin de planifier 
+et d’ordonner un projet en identifiant les dépendances entre tâches, leurs durées, les dates au plus tôt/au plus tard ainsi que le chemin critique. 
+Ce travail a été réalisé en équipe de 4.
+</p>
+
+<p>
+Dans un premier temps, nous avons conçu un diagramme UML puis nous avons développé une version de l'application en CUI. Celle-ci lit un fichier 
+contenant les tâches, leurs durées et leurs antécédents, et affiche pour chacune la durée, les marges, les antécédents et les successeurs.
+Nous avons ensuite développé une version en GUI qui se charge de représenter le graphe du projet et propose d'afficher le détail des calculs
+des dates au plus tôt/au plus tard ainsi qu'une option pour afficher les éventuels chemins critiques.
+</p>
+
+<p>
+Pour compléter ces fonctionnalités, nous avons implémenté des avenants permettant la modification des tâches via l’interface ainsi que
+la sauvegarde de projet dans un fichier texte.
+</p>
+
+<p>
+Ma principale difficulté dans ce projet a été de concevoir un code à la fois clair, logique et facilement compréhensible. 
+j'ai dû réécrire plusieurs fois certaines parties du programme pour améliorer la structure, éviter les redondances et gagner en lisibilité.
+</p>
+
+<p>
+Ce projet m’a permis de progresser en programmation orientée objet avec Java, en modélisation UML, et de faire preuve d'un meilleur raisonnement 
+algorithmique. J’ai aussi pris conscience de l’importance d’un code bien structuré pour faciliter la maintenance et la compréhension, 
+surtout dans le cadre d’un travail collaboratif.
+</p>
+
+<p>
+Ce que je retiens de cette SAE est la nécéssité d'un code propre, cohérent, évolutif et bien commenté.
+</p>
+
+<p>Cette SAE a débouché sur une présentation orale dans laquelle nous avons démonstré les fonctionnalités de notre application.</p>
+
+<p><a href="https://github.com/Apscawolf/sae201/tree/main">Le code sur Github</a></p>
+<p><a href="./Ressources/UML.pdf">Lien vers le diagramme UML</a></p>
+
+<div style="display: flex; justify-content: space-between;">
+  <figure style="width: 30%; text-align: center;">
+    <img src="./Ressources/CUI.png" alt="Image 1" style="width: 100%; height: auto;">
+    <figcaption>Appli en CUI</figcaption>
+  </figure>
+  <figure style="width: 30%; position: relative; left: -100px; text-align: center;">
+    <img src="./Ressources/GUI.png" alt="Image 2" style="position: relative; left: -100px; width: 500px; height: auto;">
+    <figcaption>Appli en GUI</figcaption>
+  </figure>
+</div>
+
+
+
+</body>
+</html>
